@@ -1,0 +1,450 @@
+{
+ "autoname": "CRM-MF-.####",
+ "creation": "2019-08-29 14:53:52.675380",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_section",
+  "opportunity_number",
+  "company",
+  "customer",
+  "column_break_2",
+  "stage",
+  "opportunity_date",
+  "column_break_4",
+  "opportunity_stage_date",
+  "order_handling_stage_date",
+  "section_1",
+  "mf_1",
+  "section_2",
+  "mf_2",
+  "section_3",
+  "mf_3",
+  "section_4",
+  "mf_4",
+  "section_5",
+  "mf_5",
+  "section_6",
+  "mf_6",
+  "section_7",
+  "mf_7",
+  "section_8",
+  "mf_8",
+  "section_9",
+  "mf_9",
+  "section_10",
+  "mf_10",
+  "section_11",
+  "business_development",
+  "purchase",
+  "operations",
+  "column_break_33",
+  "business_development_name",
+  "purchase_name",
+  "operations_name",
+  "column_break",
+  "quality_assurance",
+  "process_engineering",
+  "column_break_38",
+  "quality_assurance_name",
+  "engineering_name",
+  "column_break_35",
+  "pre_engineering",
+  "technical",
+  "column_break_47",
+  "pre_engineering_name",
+  "technical_name",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "opportunity_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opportunity Number",
+   "options": "Opportunity",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:doc.opportunity_number;",
+   "fetch_from": "opportunity_number.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Small Text",
+   "label": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Manufacturing Feasibility",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_1",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_2",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_3",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_4",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_1",
+   "fieldtype": "Section Break",
+   "label": "1. Can customer requirements in terms of Product Quality be met:"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_2",
+   "fieldtype": "Section Break",
+   "label": "2. Can customer requirements in terms of New Product Development lead time be met:"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_3",
+   "fieldtype": "Section Break",
+   "label": "3. Can customer requirements in terms of Lead time for mass production be met:"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_4",
+   "fieldtype": "Section Break",
+   "label": "4. Can customer requirements in terms of Monthly Volumes (capacity - inhouse and suppliers) be met:"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_5",
+   "fieldtype": "Section Break",
+   "label": "5. Product testing requirements:"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_5",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_6",
+   "fieldtype": "Section Break",
+   "label": "6. Product servicing requirements:"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_6",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_7",
+   "fieldtype": "Section Break",
+   "label": "7. Customer cost targets if any:"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_7",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_8",
+   "fieldtype": "Section Break",
+   "label": "8. Customer targets for rejection /rework process capability:"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_8",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_9",
+   "fieldtype": "Section Break",
+   "label": "9. Are new /additional facilities to be created to meet customer requirements? If yes, can they be created and installed /made available on "
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_9",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_10",
+   "fieldtype": "Section Break",
+   "label": "10. Additional Manufacturing Process:"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mf_10",
+   "fieldtype": "Table",
+   "label": " Sub Questions",
+   "options": "Manufacturing Feasibility Detail"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.opportunity_number;",
+   "fieldname": "section_11",
+   "fieldtype": "Section Break",
+   "label": "CFT Team Members"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_section",
+   "fieldtype": "Section Break",
+   "options": "fa fa-user"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Stage 1 Pending\nStage 1 Completed\nStage 2 Pending\nStage 2 Completed"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "opportunity_number.company",
+   "fieldname": "company",
+   "fieldtype": "Read Only",
+   "label": "Company"
+  },
+  {
+   "fetch_from": "Opportunity.creation",
+   "fieldname": "opportunity_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Date",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "opportunity_stage_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Stage Date",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "order_handling_stage_date",
+   "fieldtype": "Date",
+   "label": "Order handling Stage Date",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.opportunity_number;",
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage ",
+   "options": "Opportunity Stage\nOrder Handling Stage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "business_development",
+   "fieldtype": "Link",
+   "label": "Business Development",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase",
+   "fieldtype": "Link",
+   "label": "Purchase",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality_assurance",
+   "fieldtype": "Link",
+   "label": "Quality Assurance",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pre_engineering",
+   "fieldtype": "Link",
+   "label": "Pre Engineering",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "technical",
+   "fieldtype": "Link",
+   "label": "Technical",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "business_development.first_name",
+   "fieldname": "business_development_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "purchase.first_name",
+   "fieldname": "purchase_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "quality_assurance.first_name",
+   "fieldname": "quality_assurance_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "process_engineering.first_name",
+   "fieldname": "engineering_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pre_engineering.first_name",
+   "fieldname": "pre_engineering_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "technical.first_name",
+   "fieldname": "technical_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "process_engineering",
+   "fieldtype": "Link",
+   "label": "Process Engineering",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Link",
+   "label": "Operations",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "operations.first_name",
+   "fieldname": "operations_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-11 20:26:12.650220",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Manufacturing Feasibility",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

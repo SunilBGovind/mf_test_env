@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "creation": "2020-04-10 13:01:49.482519",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "understanding",
+  "ability_to_use",
+  "improvement_noticed_in_job",
+  "column_break_7",
+  "ability_to_guide_others",
+  "achievement_of_objectives",
+  "areas_where_trained_subject_implemented",
+  "need_for_additional_self_learning",
+  "further_support_required_from_hr_to_improve",
+  "training_event_allocated",
+  "training_program"
+ ],
+ "fields": [
+  {
+   "fetch_from": "employee_no.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_no.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "understanding",
+   "fieldtype": "Select",
+   "label": "Understanding",
+   "options": "\nExcellent\nV.Good\nGood\nAverage\nPoor\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ability_to_use",
+   "fieldtype": "Select",
+   "label": "Ability to use",
+   "options": "\nExcellent\nV.Good\nGood\nAverage\nPoor\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "improvement_noticed_in_job",
+   "fieldtype": "Select",
+   "label": "Improvement noticed in job",
+   "options": "\nExcellent\nV.Good\nGood\nAverage\nPoor\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ability_to_guide_others",
+   "fieldtype": "Select",
+   "label": "Ability to guide others",
+   "options": "\nExcellent\nV.Good\nGood\nAverage\nPoor\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "achievement_of_objectives",
+   "fieldtype": "Select",
+   "label": "Achievement of Objectives",
+   "options": "\nExcellent\nV.Good\nGood\nAverage\nPoor\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "areas_where_trained_subject_implemented",
+   "fieldtype": "Small Text",
+   "label": "Areas where trained subject implemented",
+   "reqd": 1
+  },
+  {
+   "fieldname": "need_for_additional_self_learning",
+   "fieldtype": "Select",
+   "label": "Need for additional Self learning",
+   "options": "\nYes\nNo\nNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "further_support_required_from_hr_to_improve",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Further support required from HR to improve",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee No.",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "depends_on": "eval: doc.further_support_required_from_hr_to_improve==\"Yes\"",
+   "fieldname": "training_event_allocated",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Training Event Allocated?"
+  },
+  {
+   "fieldname": "training_program",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Training Program",
+   "options": "Training Program"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-04-21 19:22:18.684299",
+ "modified_by": "Administrator",
+ "module": "Negentropy HR",
+ "name": "Training Effectiveness Employee",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

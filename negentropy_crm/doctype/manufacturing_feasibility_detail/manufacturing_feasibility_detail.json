@@ -1,0 +1,68 @@
+{
+ "creation": "2019-09-01 13:44:48.270697",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "stage1_response",
+  "stage1_response_remarks",
+  "stage2_response",
+  "stage2_response_remarks"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Question",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "stage1_response",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Yes/No",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "stage1_response_remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "stage2_response",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Yes/No",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "stage2_response_remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-09 17:22:03.829637",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Manufacturing Feasibility Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,67 @@
+{
+ "autoname": "field:incoterms_code",
+ "creation": "2019-08-21 23:19:19.151651",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incoterms_code",
+  "incoterms_name",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "incoterms_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Incoterms Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "incoterms_code",
+   "fieldtype": "Data",
+   "label": "Incoterms Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description ",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-08-22 13:25:32.739138",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Incoterms",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Sales User"
+  },
+  {
+   "read": 1,
+   "role": "Sales Manager"
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "incoterms_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

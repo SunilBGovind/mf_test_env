@@ -1,0 +1,132 @@
+[
+ {
+  "category_name": "PCBA",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:22:06.569052",
+  "name": "PCBA",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Box Build",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:22:16.317760",
+  "name": "Box Build",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Cable Harness Assembly",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:22:48.063404",
+  "name": "Cable Harness Assembly",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Transformer",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:22:55.446321",
+  "name": "Transformer",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Components",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:23:02.836045",
+  "name": "Components",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Tools, Jigs and Fixtures",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:23:23.904968",
+  "name": "Tools, Jigs and Fixtures",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Installation and Support",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:23:43.001117",
+  "name": "Installation and Support",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Service and Repair",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:23:48.837465",
+  "name": "Service and Repair",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Design Engineering Solutions",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:23:57.188702",
+  "name": "Design Engineering Solutions",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Trading",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:24:03.621405",
+  "name": "Trading",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Staffing Services",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:24:10.770964",
+  "name": "Staffing Services",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Service",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-10-14 16:24:42.960787",
+  "name": "Service",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category_name": "Products",
+  "docstatus": 0,
+  "doctype": "Lead Category",
+  "modified": "2019-08-21 14:52:20.076941",
+  "name": "Products",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

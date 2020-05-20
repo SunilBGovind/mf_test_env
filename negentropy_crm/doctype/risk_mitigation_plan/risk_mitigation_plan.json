@@ -1,0 +1,248 @@
+{
+ "autoname": "CRM-MP-.####",
+ "creation": "2019-09-03 13:11:14.860522",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "risk_analysis",
+  "company",
+  "column_break_2",
+  "customer_name",
+  "risk_element_content",
+  "risk_mitigation_plan_details",
+  "section_11",
+  "business_development",
+  "purchase",
+  "operations",
+  "column_break_33",
+  "business_development_name",
+  "purchase_name",
+  "operations_name",
+  "column_break_14",
+  "quality_assurance",
+  "process_engineering",
+  "column_break_35",
+  "quality_assurance_name",
+  "engineering_name",
+  "column_break_20",
+  "pre_engineering",
+  "technical",
+  "column_break_39",
+  "pre_engineering_name",
+  "technical_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "risk_element_content",
+   "fieldtype": "Section Break",
+   "label": "Risk Mitigation Content"
+  },
+  {
+   "fieldname": "section_11",
+   "fieldtype": "Section Break",
+   "label": "CFT Team Members"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Risk Mitigation Plan",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "risk_analysis",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Risk Analysis",
+   "options": "Risk Analysis",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "risk_mitigation_plan_details",
+   "fieldtype": "Table",
+   "label": "Question List",
+   "options": "Risk Mitigation Plan Detail",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "risk_analysis.company",
+   "fieldname": "company",
+   "fieldtype": "Read Only",
+   "label": "Company"
+  },
+  {
+   "depends_on": "eval:doc.risk_analysis;",
+   "fetch_from": "risk_analysis.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "label": "Customer"
+  },
+  {
+   "fetch_from": "risk_analysis.business_development",
+   "fieldname": "business_development",
+   "fieldtype": "Read Only",
+   "label": "Business Development",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.purchase",
+   "fieldname": "purchase",
+   "fieldtype": "Read Only",
+   "label": "Purchase",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.business_development_name",
+   "fieldname": "business_development_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.purchase_name",
+   "fieldname": "purchase_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.quality_assurance",
+   "fieldname": "quality_assurance",
+   "fieldtype": "Read Only",
+   "label": "Quality Assurance",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.quality_assurance_name",
+   "fieldname": "quality_assurance_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.process_engineering",
+   "fieldname": "engineering_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.pre_engineering",
+   "fieldname": "pre_engineering",
+   "fieldtype": "Read Only",
+   "label": "Pre Engineering",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.technical",
+   "fieldname": "technical",
+   "fieldtype": "Read Only",
+   "label": "Technical",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.pre_engineering_name",
+   "fieldname": "pre_engineering_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.technical_name",
+   "fieldname": "technical_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.process_engineering",
+   "fieldname": "process_engineering",
+   "fieldtype": "Read Only",
+   "label": "Process Engineering",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.operations",
+   "fieldname": "operations",
+   "fieldtype": "Read Only",
+   "label": "Operations",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "risk_analysis.operations_name",
+   "fieldname": "operations_name",
+   "fieldtype": "Read Only",
+   "label": "Name",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-13 18:45:14.123146",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Risk Mitigation Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

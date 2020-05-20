@@ -1,0 +1,426 @@
+{
+ "autoname": "CRM-RA-.####",
+ "creation": "2019-09-01 15:22:37.662798",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opportunity_number",
+  "company",
+  "column_break_2",
+  "opportunity_date",
+  "customer_name",
+  "column_break_6",
+  "manufacturing_feasibility_number",
+  "column_break_4",
+  "section_1",
+  "ra_1",
+  "section_2",
+  "ra_2",
+  "section_3",
+  "ra_3",
+  "section_4",
+  "ra_4",
+  "section_5",
+  "ra_5",
+  "section_6",
+  "ra_6",
+  "section_7",
+  "ra_7",
+  "total_section",
+  "blank",
+  "blank2",
+  "blank3",
+  "column_break_22",
+  "total_net_risk_score",
+  "total_weightage",
+  "total_risk",
+  "section_11",
+  "business_development",
+  "purchase",
+  "operations",
+  "column_break_33",
+  "business_development_name",
+  "purchase_name",
+  "operations_name",
+  "column_break_36",
+  "quality_assurance",
+  "process_engineering",
+  "column_break_35",
+  "quality_assurance_name",
+  "process_engineering_name",
+  "column_break_42",
+  "pre_engineering",
+  "technical",
+  "column_break_39",
+  "pre_engineering_name",
+  "technical_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "opportunity_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opportunity Number",
+   "options": "Opportunity",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opportunity_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_1",
+   "fieldtype": "Section Break",
+   "label": "1. Customer Profile :"
+  },
+  {
+   "fieldname": "ra_1",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_2",
+   "fieldtype": "Section Break",
+   "label": "2. Market Potential for Product and Market Behavior :"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_3",
+   "fieldtype": "Section Break",
+   "label": "3. Complexity of Product / Process Design :"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_4",
+   "fieldtype": "Section Break",
+   "label": "4. Manufacturing and Supplier Issues :"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_5",
+   "fieldtype": "Section Break",
+   "label": "5. Resource Problems if any :"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_6",
+   "fieldtype": "Section Break",
+   "label": "6. Government / Homologation Requirements :"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_7",
+   "fieldtype": "Section Break",
+   "label": "7. Other Issues :"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.opportunity_number;",
+   "fieldname": "section_11",
+   "fieldtype": "Section Break",
+   "label": "CFT Team Members"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Risk Analysis",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ra_2",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ra_3",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ra_4",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ra_5",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ra_6",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ra_7",
+   "fieldtype": "Table",
+   "label": "Sub Question",
+   "options": "Risk Analysis Detail",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_weightage",
+   "fieldtype": "Int",
+   "label": "Total Weightage",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_net_risk_score",
+   "fieldtype": "Int",
+   "label": "Total Net Risk Score",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_risk",
+   "fieldtype": "Float",
+   "label": "Total Risk",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blank",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "default": "\n\n\n\n",
+   "fieldname": "blank2",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "blank3",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "depends_on": "eval:doc.opportunity_number;",
+   "fetch_from": "opportunity_number.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "label": "Customer"
+  },
+  {
+   "fetch_from": "opportunity_number.company",
+   "fieldname": "company",
+   "fieldtype": "Read Only",
+   "label": "Company"
+  },
+  {
+   "fieldname": "business_development",
+   "fieldtype": "Link",
+   "label": "Business Development",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase",
+   "fieldtype": "Link",
+   "label": "Purchase",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "business_development.first_name",
+   "fieldname": "business_development_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "purchase.first_name",
+   "fieldname": "purchase_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_assurance",
+   "fieldtype": "Link",
+   "label": "Quality Assurance",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "quality_assurance.first_name",
+   "fieldname": "quality_assurance_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pre_engineering",
+   "fieldtype": "Link",
+   "label": "Pre Engineering",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "technical",
+   "fieldtype": "Link",
+   "label": "Technical",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "pre_engineering.first_name",
+   "fieldname": "pre_engineering_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "technical.first_name",
+   "fieldname": "technical_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacturing_feasibility_number",
+   "fieldtype": "Read Only",
+   "label": "Manufacturing Feasibility Number"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total Section"
+  },
+  {
+   "fieldname": "process_engineering",
+   "fieldtype": "Link",
+   "label": "Process Engineering",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Link",
+   "label": "Operations",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "operations.first_name",
+   "fieldname": "operations_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "process_engineering.first_name",
+   "fieldname": "process_engineering_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-13 17:29:43.288646",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Risk Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

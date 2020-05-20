@@ -1,0 +1,87 @@
+{
+ "creation": "2019-09-05 23:24:49.553237",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "main_question",
+  "risk_element",
+  "net_risk_score",
+  "remarks",
+  "action_point",
+  "responsibility",
+  "responsibility_name",
+  "target_date"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "risk_element",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Risk Element",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "action_point",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action Point",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "responsibility",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsibility",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "net_risk_score",
+   "fieldtype": "Int",
+   "label": "Net Risk Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "responsibility.first_name",
+   "fieldname": "responsibility_name",
+   "fieldtype": "Data",
+   "label": "Responsibility Person Name",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "main_question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Main Question",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-13 18:44:23.739148",
+ "modified_by": "Administrator",
+ "module": "Negentropy CRM",
+ "name": "Risk Mitigation Plan Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,4 @@
+Negentropy CRM
+Negentropy Core
+Negentropy HR
+Negentropy Setup

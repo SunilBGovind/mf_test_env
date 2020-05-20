@@ -1,0 +1,129 @@
+{
+ "creation": "2020-04-09 11:31:15.660585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "training_event_section",
+  "training_event",
+  "column_break_2",
+  "training_date",
+  "auto_assign",
+  "section_break_4",
+  "training_effectiveness_employee",
+  "section_break_6",
+  "conducted_by",
+  "employee_name",
+  "column_break_8",
+  "conducted_on",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "training_date",
+   "fieldtype": "Date",
+   "label": "Training Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Effectiveness",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "training_effectiveness_employee",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "Training Effectiveness Employee"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Training Effectiveness"
+  },
+  {
+   "fieldname": "conducted_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Conducted By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "conducted_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Conducted on",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "conducted_by.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "training_event",
+   "fieldtype": "Link",
+   "label": "Training Event",
+   "options": "Training Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_event_section",
+   "fieldtype": "Section Break",
+   "label": "Training Event"
+  },
+  {
+   "default": "1",
+   "description": "Auto Populate employees who require further support from HR",
+   "fieldname": "auto_assign",
+   "fieldtype": "Check",
+   "label": "Auto Assign?"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2020-04-21 19:31:24.496997",
+ "modified_by": "Administrator",
+ "module": "Negentropy HR",
+ "name": "Training Effectiveness",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
